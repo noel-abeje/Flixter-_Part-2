@@ -34,5 +34,5 @@ data class Movie (
         val adult: Boolean ?,
 
 )  : Parcelable {
-        constructor() : this("","","", "","","",0, "", false)
+        constructor() : this("","","", "","","",0, "", true)
         }
