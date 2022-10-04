@@ -36,16 +36,73 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/mvOverview"
-        android:layout_width="237dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/mvRelease"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="25dp"
         android:shadowColor="#251010"
-        android:text="MovieOverview"
+        android:text="MovieRelease"
         android:textAlignment="inherit"
         android:textColor="#FFEB3B"
         app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
+
+    <TextView
+        android:id="@+id/RD"
+        android:layout_width="104dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Release Date:"
+        android:textColor="#FFEB3B"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
+
+    <TextView
+        android:id="@+id/Pop"
+        android:layout_width="104dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:text="Popularity:"
+        android:textColor="#FD0000"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
+
+    <TextView
+        android:id="@+id/mvPopularity"
+        android:layout_width="107dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#251010"
+        android:text="MoviePopularity"
+        android:textAlignment="inherit"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvRelease" />
+
+    <TextView
+        android:id="@+id/Lang"
+        android:layout_width="92dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:text="Language:"
+        android:textColor="#2196F3"
+        app:layout_constraintStart_toEndOf="@+id/mvPoster"
+        app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
+
+    <TextView
+        android:id="@+id/mvLanguage"
+        android:layout_width="108dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:text="MovieLanguage"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mvTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,12 @@ data class Movie (
 
         @SerializedName("overview")
         val overview: String ?,
+
+        @SerializedName("popularity")
+        val popularity: Number ?,
+
+        @SerializedName("original_language")
+        val language: String ?,
 )  : Parcelable {
-        constructor() : this("","","","","")
+        constructor() : this("","","","","",0, "")
         }

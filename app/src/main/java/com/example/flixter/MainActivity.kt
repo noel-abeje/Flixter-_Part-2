@@ -2,6 +2,7 @@ package com.example.flixter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,7 +19,18 @@ class MainActivity : AppCompatActivity() {
         rvMovies.layoutManager = LinearLayoutManager(this)
         rvMovies.setHasFixedSize(true)
         getMovieData { movies: List<Movie> ->
-            rvMovies.adapter = MovieAdapter(movies)
+            var adapter = MovieAdapter(movies)
+            rvMovies.adapter = adapter
+
+            adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
+                override fun onItemClick(position: Int) {
+
+                    Toast.makeText(this@MainActivity, "You clicked on item no $position", Toast.LENGTH_SHORT).show()
+
+                }
+
+
+            })
         }
     }
     private fun getMovieData(callback: (List<Movie>) -> Unit) {
