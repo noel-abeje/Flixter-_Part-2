@@ -14,7 +14,7 @@ The following **required** functionality is completed:
   - Chosen Endpoint: top rated
 - [x] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
 - [x] **Use Glide to load and display at least one image per entry**
-- [] **Click on an entry to view specific details about that entry using Intents**
+- [x] **Click on an entry to view specific details about that entry using Intents**
 
 The following **optional** features are implemented:
 
@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='walkthrough1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Peek
@@ -38,7 +38,7 @@ GIF created with Peek
 
 ## Notes
 
-I couldn't get the page to move to a new activity.
+I finally got it to work
 
 ## License
 
