@@ -1,5 +1,6 @@
 package com.example.flixter
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -10,6 +11,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.create
+
+const val Movie_EXTRA = "Movie_EXTRA"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +27,11 @@ class MainActivity : AppCompatActivity() {
 
             adapter.setOnItemClickListener(object : MovieAdapter.onItemClickListener {
                 override fun onItemClick(position: Int) {
-
-                    Toast.makeText(this@MainActivity, "You clicked on item no $position", Toast.LENGTH_SHORT).show()
+                    var movie = movies[position]
+                    //Toast.makeText(this@MainActivity, "You clicked on item no $position", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@MainActivity, DetailActivity::class.java)
+                    intent.putExtra(Movie_EXTRA, movie)
+                    startActivity(intent)
 
                 }
 
